@@ -23,7 +23,18 @@ namespace TP5.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Tutorial()
+        {
+            return View();
+        }
+
+        public IActionResult Comenzar()
+        {
+            return View("Habitacion1");
+        }
+
+        [HttpPost]
+        public IActionResult Habitacion(int sala, string clave)
         {
             return View();
         }
