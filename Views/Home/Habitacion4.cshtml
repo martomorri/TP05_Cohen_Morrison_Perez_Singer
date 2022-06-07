@@ -1,10 +1,16 @@
 <h1 class="display-4">Habitacion 4</h1>
-<p>Esta es la ultima habitacion. Para lograr escapar de la Casa de la Moneda con el dinero deberas resolver una serie de preguntas de la serie "La Casa de Papel". Cada una de estas preguntas contendrá un código que te ayudará a resolver la palabra final para escapar de la policía.</p>
+<p>Esta es la ultima habitacion. Para lograr escapar de la Casa de la Moneda con el dinero deberas resolver una serie de preguntas de la serie "La Casa de Papel". Cada una de estas respuestas contendrá un letra clave que te ayudará a resolver la palabra final para escapar de la policía.</p><br/>
+<p>1- ¿Cual es el nombre del profesor?<br/>
+2- ¿Cual es el apellido del lider del CNI?<br/>
+3- ¿Cual es el apellido de Arturo?<br/>
+4- ¿Cual es el nombre de ciudad de Monica?<br/>
+5- ¿Que quieren robar en el atraco al banco de españa?<br/>
+6- Verdadero o Falso. El atraco a la Casa de la Moneda duro 15 dias.</p><br/>
 <form method="post" action='@Url.Action("Habitacion","Home")'>
     <input type="hidden" name="sala" value="4"/>
-    <input type="text" name="incognita" placeholder="Respuesta" size="20"/>
+    <input required type="text" name="incognita" placeholder="Respuesta" size="20"/>
     <input type="submit" value="Comprobar"/>
 </form><br/>
-<button onclick="alert('Cada pregunta tiene una letra en clave')"> Pista 1 </button>
-<button onclick="alert('Ordena las letras de una manera coherente')"> Pista 2 </button>
+<button onclick="alert('Ordena las letras de una manera coherente')"> Pista 1 </button>
+<button onclick="alert('Las letras clave pueden repetirse')"> Pista 2 </button>
 <p class="error">@ViewBag.Error</p>

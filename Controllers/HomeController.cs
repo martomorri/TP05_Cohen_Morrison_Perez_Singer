@@ -30,6 +30,7 @@ namespace TP5.Controllers
 
         public IActionResult Comenzar()
         {
+            Escape.reiniciarJuego();
             return View("Habitacion1");
         }
 
