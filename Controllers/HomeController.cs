@@ -34,9 +34,20 @@ namespace TP5.Controllers
         }
 
         [HttpPost]
-        public IActionResult Habitacion(int sala, string clave)
+        public IActionResult Habitacion(int sala, string incognita)
         {
-            return View();
+            if(sala == Escape.estadoJuego) {
+                bool correcto = Escape.resolverSala(sala, incognita);
+                if(correcto) {
+                    if(sala == 4) {
+                        return View("Victoria");
+                    }
+                }
+                else {
+                    ViewBag.Error = "La clave es incorrecta. Intente nuevamente";
+                }
+            }
+            return View("Habitacion" + Escape.estadoJuego);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

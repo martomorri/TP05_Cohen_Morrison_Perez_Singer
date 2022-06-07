@@ -1,0 +1,10 @@
+<h1 class="display-4">Habitacion 2</h1>
+<p>Lograste superar la primer habitacion. En esta habitacion hay una serie de imagenes. En una de ellas se encontrará el código para poder pasar a la siguiente habitacion.</p>
+<form method="post" action='@Url.Action("Habitacion","Home")'>
+    <input type="hidden" name="sala" value="2"/>
+    <input type="text" name="incognita" placeholder="Respuesta" size="20"/>
+    <input type="submit" value="Comprobar"/>
+</form><br/>
+<button onclick="alert('El codigo esta formado por tres letras')"> Pista 1 </button>
+<button onclick="alert('Fijate las fotos que tengan algo dorado')"> Pista 2 </button>
+<p class="error">@ViewBag.Error</p>

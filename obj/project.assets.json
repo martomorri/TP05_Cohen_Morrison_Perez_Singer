@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\4IB\\Programacion4\\TP05_Cohen_Morrison_Perez_Singer\\TP05_Cohen_Morrison_Perez_Singer\\TP5\\TP5.csproj",
+      "projectUniqueName": "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj",
       "projectName": "TP5",
-      "projectPath": "Z:\\4IB\\Programacion4\\TP05_Cohen_Morrison_Perez_Singer\\TP05_Cohen_Morrison_Perez_Singer\\TP5\\TP5.csproj",
+      "projectPath": "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj",
       "packagesPath": "C:\\Users\\46873102\\.nuget\\packages\\",
-      "outputPath": "Z:\\4IB\\Programacion4\\TP05_Cohen_Morrison_Perez_Singer\\TP05_Cohen_Morrison_Perez_Singer\\TP5\\obj\\",
+      "outputPath": "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\46873102\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,6 +55,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.17, 5.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -63,7 +69,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

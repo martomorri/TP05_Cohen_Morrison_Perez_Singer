@@ -1,0 +1,10 @@
+<h1 class="display-4">Habitacion 1</h1>
+<p>Estamos en la Casa de la moneda y la policia nos tiene acorralados. En esta primer habitacion debemos resolver un crucigrama para obtener la palabra clave que los pasara a la proxima habitacion.</p>
+<iframe width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/12258877-crucigrama_la_casa_de_papel.html"></iframe><br/>
+<form method="post" action='@Url.Action("Habitacion","Home")'>
+    <input type="hidden" name="sala" value="1"/>
+    <input type="text" name="incognita" placeholder="Respuesta" size="20"/>
+    <input type="submit" value="Comprobar"/>
+</form><br/>
+<button onclick="alert('Mira la primer letra de cada respuesta')"> Pista 1 </button>
+<button onclick="alert('Ordena las letras para que formen una palabra que tenga que ver con la serie')"> Pista 2 </button>

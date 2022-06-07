@@ -1,0 +1,10 @@
+<h1 class="display-4">Habitacion 4</h1>
+<p>Esta es la ultima habitacion. Para lograr escapar de la Casa de la Moneda con el dinero deberas resolver una serie de preguntas de la serie "La Casa de Papel". Cada una de estas preguntas contendrá un código que te ayudará a resolver la palabra final para escapar de la policía.</p>
+<form method="post" action='@Url.Action("Habitacion","Home")'>
+    <input type="hidden" name="sala" value="4"/>
+    <input type="text" name="incognita" placeholder="Respuesta" size="20"/>
+    <input type="submit" value="Comprobar"/>
+</form><br/>
+<button onclick="alert('Cada pregunta tiene una letra en clave')"> Pista 1 </button>
+<button onclick="alert('Ordena las letras de una manera coherente')"> Pista 2 </button>
+<p class="error">@ViewBag.Error</p>
