@@ -97,3 +97,6 @@ input {
   font-style: bold;
   font-size: 20px;
 }
+.carousel-inner{
+  height: 200px;
+ }
