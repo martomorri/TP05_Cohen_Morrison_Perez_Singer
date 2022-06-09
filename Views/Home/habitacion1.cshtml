@@ -3,9 +3,16 @@
 <iframe width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/12258877-crucigrama_la_casa_de_papel.html"></iframe><br/>
 <form method="post" action='@Url.Action("Habitacion","Home")'>
     <input type="hidden" name="sala" value="1"/>
-    <input required type="text" name="incognita" placeholder="Respuesta" size="20"/>
-    <input type="submit" value="Comprobar"/>
-</form><br/>
-<button onclick="alert('Mira la primer letra de cada respuesta')"> Pista 1 </button>
-<button onclick="alert('Ordena las letras para que formen una palabra que tenga que ver con la serie')"> Pista 2 </button>
-<p class="error">@ViewBag.Error</p>
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Clave" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p></p>
+<button class="btn btn-primary" onclick="alert('Mira la primer letra de cada respuesta')"> Pista 1 </button>
+<button class="btn btn-primary" onclick="alert('Ordena las letras para que formen una palabra que tenga que ver con la serie')"> Pista 2 </button>
+<p class="incorrecto">@ViewBag.Error</p>

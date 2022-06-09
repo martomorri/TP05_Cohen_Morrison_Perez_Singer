@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UKnGrWiiwEESitwP+wRcR6M92hqbcDiauEHYpkaUsApe9xN8fpMKtXCKuNZ30eCt3uJ6EfdWYJRiq2QNpGw0hQ==",
+  "dgSpecHash": "1EL5FEk+iZUphj4NLJQ7cS+CIrLIBwzUvOkesArSsJgp5z+j/9hQ2gbzqz6zbgZJM47poy6As2zFwzCu0xbmeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\46873102\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

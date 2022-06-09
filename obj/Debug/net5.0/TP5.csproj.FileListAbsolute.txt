@@ -1,4 +1,3 @@
-C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.csproj.AssemblyReference.cache
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.AssemblyInfoInputs.cache
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.AssemblyInfo.cs
@@ -33,7 +32,6 @@ C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.RazorTargetAssemblyInfo.cs
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.Views.pdb
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.dll
-C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\refint\TP5.dll
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.pdb
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.genruntimeconfig.cache
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\ref\TP5.dll
@@ -43,3 +41,6 @@ C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\Razo
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\Razor\Views\Home\Habitacion3.cshtml.g.cs
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\Razor\Views\Home\Habitacion4.cshtml.g.cs
 C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\Razor\Views\Home\Victoria.cshtml.g.cs
+C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\bin\Debug\net5.0\ref\TP5.dll
+C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\TP5.csprojAssemblyReference.cache
+C:\Users\46873102\Desktop\TP05_Cohen_Morrison_Perez_Singer\obj\Debug\net5.0\staticwebassets\TP5.StaticWebAssets.xml

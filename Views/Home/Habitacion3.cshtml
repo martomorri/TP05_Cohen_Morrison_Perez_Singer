@@ -1,13 +1,64 @@
 <h1 class="display-4">Habitacion 3</h1>
 <p>¡Muy bien! Encontraste el código. Ahora tendras que resolver 3 minijuegos de 4 fotos 1 palabra. Cada una de las respuestas tendra que ver ocn el codigo. Separa las tres por un guion - sin espacio. Si logras encontrar el código, pasarás a la última habitacion.</p>
-<img src="/img/4fotos1.jpg"><br/>
-<img src="/img/4fotos2.jpg"><br/>
-<img src="/img/4fotos3.jpg"><br/>
+<img src="/img/nairobi.jpg">
+<p></p>
+<form method="post" action='@Url.Action("hab3","Home")'>
+    <input type="hidden" name="pregunta" value="0">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto0</p>
+<p class="incorrecto">@ViewBag.Incorrecto0</p>
+<img src="/img/rio.jpg">
+<p></p>
+<form method="post" action='@Url.Action("hab3","Home")'>
+    <input type="hidden" name="pregunta" value="1">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto1</p>
+<p class="incorrecto">@ViewBag.Incorrecto1</p>
+<img src="/img/denver.jpg">
+<p></p>
+<form method="post" action='@Url.Action("hab3","Home")'>
+    <input type="hidden" name="pregunta" value="2">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto2</p>
+<p class="incorrecto">@ViewBag.Incorrecto2</p>
+<p></p>
+<p>CLAVE:</p>
 <form method="post" action='@Url.Action("Habitacion","Home")'>
     <input type="hidden" name="sala" value="3"/>
-    <input required type="text" name="incognita" placeholder="Respuesta" size="20"/>
-    <input type="submit" value="Comprobar"/>
-</form><br/>
-<button onclick="alert('Cada minijuego contiene una parte del codigo final')"> Pista 1 </button>
-<button onclick="alert('Las primeras 3 letras de cada respuesta son partes del codigo')"> Pista 2 </button>
-<p class="error">@ViewBag.Error</p>
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Clave" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p></p>
+<button class="btn btn-primary" onclick="alert('Cada minijuego contiene una parte del codigo final')"> Pista 1 </button>
+<button class="btn btn-primary" onclick="alert('Las primeras 3 letras de cada respuesta son partes del codigo')"> Pista 2 </button>
+<p class="incorrecto">@ViewBag.Error</p>

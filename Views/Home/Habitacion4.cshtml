@@ -1,16 +1,109 @@
 <h1 class="display-4">Habitacion 4</h1>
-<p>Esta es la ultima habitacion. Para lograr escapar de la Casa de la Moneda con el dinero deberas resolver una serie de preguntas de la serie "La Casa de Papel". Cada una de estas respuestas contendrá un letra clave que te ayudará a resolver la palabra final para escapar de la policía.</p><br/>
-<p>1- ¿Cual es el nombre del profesor?<br/>
-2- ¿Cual es el apellido del lider del CNI?<br/>
-3- ¿Cual es el apellido de Arturo?<br/>
-4- ¿Cual es el nombre de ciudad de Monica?<br/>
-5- ¿Que quieren robar en el atraco al banco de españa?<br/>
-6- Verdadero o Falso. El atraco a la Casa de la Moneda duro 15 dias.</p><br/>
+<p>Esta es la ultima habitacion. Para lograr escapar de la Casa de la Moneda con el dinero deberas resolver una serie de
+    preguntas de la serie "La Casa de Papel". Cada una de estas respuestas contendrá un letra clave que te ayudará a
+    resolver la palabra final para escapar de la policía.</p><br />
+<p>1- ¿Cual es el nombre del profesor?
+<form method="post" action='@Url.Action("hab4","Home")'>
+    <input type="hidden" name="pregunta" value="0">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto0</p>
+<p class="incorrecto">@ViewBag.Incorrecto0</p>
+2- ¿Cual es el apellido del lider del CNI?
+<p></p>
+<form method="post" action='@Url.Action("hab4","Home")'>
+    <input type="hidden" name="pregunta" value="1">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto1</p>
+<p class="incorrecto">@ViewBag.Incorrecto1</p>
+3- ¿Cual es el apellido de Arturo?
+<p></p>
+<form method="post" action='@Url.Action("hab4","Home")'>
+    <input type="hidden" name="pregunta" value="2">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto2</p>
+<p class="incorrecto">@ViewBag.Incorrecto2</p>
+4- ¿Cual es el nombre de ciudad de Monica?
+<p></p>
+<form method="post" action='@Url.Action("hab4","Home")'>
+    <input type="hidden" name="pregunta" value="3">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto3</p>
+<p class="incorrecto">@ViewBag.Incorrecto3</p>
+5- ¿Que quieren robar en el atraco al banco de españa?
+<p></p>
+<form method="post" action='@Url.Action("hab4","Home")'>
+    <input type="hidden" name="pregunta" value="4">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto4</p>
+<p class="incorrecto">@ViewBag.Incorrecto4</p>
+6- Verdadero o Falso. El atraco a la Casa de la Moneda duro 15 dias.
+<p></p>
+<form method="post" action='@Url.Action("hab4","Home")'>
+    <input type="hidden" name="pregunta" value="5">
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Respuesta" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p class="correcto">@ViewBag.Correcto5</p>
+<p class="incorrecto">@ViewBag.Incorrecto5</p>
+<p>CLAVE:</p>
 <form method="post" action='@Url.Action("Habitacion","Home")'>
-    <input type="hidden" name="sala" value="4"/>
-    <input required type="text" name="incognita" placeholder="Respuesta" size="20"/>
-    <input type="submit" value="Comprobar"/>
-</form><br/>
-<button onclick="alert('Ordena las letras de una manera coherente')"> Pista 1 </button>
-<button onclick="alert('Las letras clave pueden repetirse')"> Pista 2 </button>
-<p class="error">@ViewBag.Error</p>
+    <input type="hidden" name="sala" value="4" />
+    <div class="form-row">
+        <div class="col-2">
+            <input required type="text" class="form-control" name="incognita" placeholder="Clave" size="20"/>
+        </div>
+        <div class="col-2">
+            <input class="btn btn-outline-light" type="submit" value="Comprobar">
+        </div>
+    </div>
+</form>
+<p></p>
+<button class="btn btn-primary" onclick="alert('Ordena las letras de una manera coherente')"> Pista 1 </button>
+<button class="btn btn-primary" onclick="alert('Las letras clave pueden repetirse')"> Pista 2 </button>
+<p class="incorrecto">@ViewBag.Error</p>
