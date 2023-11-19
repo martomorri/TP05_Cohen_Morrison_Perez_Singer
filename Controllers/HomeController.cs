@@ -58,119 +58,23 @@ namespace TP5.Controllers
         [HttpPost]
         public IActionResult hab4(int pregunta, string incognita)
         {
-            bool correcto = Escape.resolverPregunta(pregunta, incognita);
-            switch (pregunta)
-            {
-                case 0:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto0 = "¡CORRECTO!";
-                        ViewBag.Incorrecto0 = "";
-                    }
-                    else {
-                        ViewBag.Correcto0 = "";
-                        ViewBag.Incorrecto0 = "INCORRECTO :(";
-                    } 
-                    break;
-                case 1:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto1 = "¡CORRECTO!";
-                        ViewBag.Incorrecto1 = "";
-                    }
-                    else {
-                        ViewBag.Correcto1 = "";
-                        ViewBag.Incorrecto1 = "INCORRECTO :(";
-                    }
-                    break;
-                case 2:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto2 = "¡CORRECTO!";
-                        ViewBag.Incorrecto2 = "";
-                    }
-                    else {
-                        ViewBag.Correcto2 = "";
-                        ViewBag.Incorrecto2 = "INCORRECTO :(";
-                    }
-                    break;
-                case 3:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto3 = "¡CORRECTO!";
-                        ViewBag.Incorrecto3 = "";
-                    }
-                    else {
-                        ViewBag.Correcto3 = "";
-                        ViewBag.Incorrecto3 = "INCORRECTO :(";
-                    }
-                    break;
-                case 4:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto4 = "¡CORRECTO!";
-                        ViewBag.Incorrecto4 = "";
-                    }
-                    else {
-                        ViewBag.Correcto4 = "";
-                        ViewBag.Incorrecto4 = "INCORRECTO :(";
-                    }
-                    break;
-                case 5:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto5 = "¡CORRECTO!";
-                        ViewBag.Incorrecto5 = "";
-                    }
-                    else {
-                        ViewBag.Correcto5 = "";
-                        ViewBag.Incorrecto5 = "INCORRECTO :(";
-                    }
-                    break;
-            }
+            string[] vecEstadoH4 = Escape.resolverPregunta(pregunta, incognita);
+            ViewBag.Estado0 = vecEstadoH4[0];
+            ViewBag.Estado1 = vecEstadoH4[1];
+            ViewBag.Estado2 = vecEstadoH4[2];
+            ViewBag.Estado3 = vecEstadoH4[3];
+            ViewBag.Estado4 = vecEstadoH4[4];
+            ViewBag.Estado5 = vecEstadoH4[5];
             return View("Habitacion" + Escape.estadoJuego);
         }
 
         [HttpPost]
         public IActionResult hab3(int pregunta, string incognita)
         {
-            bool correcto = Escape.resolver4Fotos(pregunta, incognita);
-            switch (pregunta)
-            {
-                case 0:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto0 = "¡CORRECTO!";
-                        ViewBag.Incorrecto0 = "";
-                    }
-                    else {
-                        ViewBag.Correcto0 = "";
-                        ViewBag.Incorrecto0 = "INCORRECTO :(";
-                    } 
-                    break;
-                case 1:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto1 = "¡CORRECTO!";
-                        ViewBag.Incorrecto1 = "";
-                    }
-                    else {
-                        ViewBag.Correcto1 = "";
-                        ViewBag.Incorrecto1 = "INCORRECTO :(";
-                    }
-                    break;
-                case 2:
-                    if (correcto)
-                    {
-                        ViewBag.Correcto2 = "¡CORRECTO!";
-                        ViewBag.Incorrecto2 = "";
-                    }
-                    else {
-                        ViewBag.Correcto2 = "";
-                        ViewBag.Incorrecto2 = "INCORRECTO :(";
-                    }
-                    break;
-            }
+            string[] vecEstadoH3 = Escape.resolver4Fotos(pregunta, incognita);
+            ViewBag.Estado0 = vecEstadoH3[0];
+            ViewBag.Estado1 = vecEstadoH3[1];
+            ViewBag.Estado2 = vecEstadoH3[2];
             return View("Habitacion" + Escape.estadoJuego);
         }
 

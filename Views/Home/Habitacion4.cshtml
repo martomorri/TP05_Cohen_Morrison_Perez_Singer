@@ -1,3 +1,6 @@
+<head>
+    <title>Habitacion 4</title>
+</head>
 <h1 class="display-4">Habitacion 4</h1>
 <p>Esta es la ultima habitacion. Para lograr escapar de la Casa de la Moneda con el dinero deberas resolver una serie de
     preguntas de la serie "La Casa de Papel". Cada una de estas respuestas contendrá un letra clave que te ayudará a
@@ -14,8 +17,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto0</p>
-<p class="incorrecto">@ViewBag.Incorrecto0</p>
+@{
+    if(ViewBag.estado0 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado0</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado0</p>
+    } 
+}
 2- ¿Cual es el apellido del lider del CNI?
 <p></p>
 <form method="post" action='@Url.Action("hab4","Home")'>
@@ -29,8 +39,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto1</p>
-<p class="incorrecto">@ViewBag.Incorrecto1</p>
+@{
+    if(ViewBag.estado1 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado1</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado1</p>
+    } 
+}
 3- ¿Cual es el apellido de Arturo?
 <p></p>
 <form method="post" action='@Url.Action("hab4","Home")'>
@@ -44,8 +61,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto2</p>
-<p class="incorrecto">@ViewBag.Incorrecto2</p>
+@{
+    if(ViewBag.estado2 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado2</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado2</p>
+    } 
+}
 4- ¿Cual es el nombre de ciudad de Monica?
 <p></p>
 <form method="post" action='@Url.Action("hab4","Home")'>
@@ -59,8 +83,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto3</p>
-<p class="incorrecto">@ViewBag.Incorrecto3</p>
+@{
+    if(ViewBag.estado3 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado3</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado3</p>
+    } 
+}
 5- ¿Que quieren robar en el atraco al banco de españa?
 <p></p>
 <form method="post" action='@Url.Action("hab4","Home")'>
@@ -74,8 +105,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto4</p>
-<p class="incorrecto">@ViewBag.Incorrecto4</p>
+@{
+    if(ViewBag.estado4 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado4</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado4</p>
+    } 
+}
 6- Verdadero o Falso. El atraco a la Casa de la Moneda duro 15 dias.
 <p></p>
 <form method="post" action='@Url.Action("hab4","Home")'>
@@ -89,8 +127,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto5</p>
-<p class="incorrecto">@ViewBag.Incorrecto5</p>
+@{
+    if(ViewBag.estado5 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado5</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado5</p>
+    } 
+}
 <p>CLAVE:</p>
 <form method="post" action='@Url.Action("Habitacion","Home")'>
     <input type="hidden" name="sala" value="4" />

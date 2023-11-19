@@ -1,3 +1,6 @@
+<head>
+    <title>Habitacion 3</title>
+</head>
 <h1 class="display-4">Habitacion 3</h1>
 <p>¡Muy bien! Encontraste el código. Ahora tendras que resolver 3 minijuegos de 4 fotos 1 palabra. Cada una de las respuestas tendra que ver ocn el codigo. Separa las tres por un guion - sin espacio. Si logras encontrar el código, pasarás a la última habitacion.</p>
 <img src="/img/nairobi.jpg">
@@ -13,8 +16,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto0</p>
-<p class="incorrecto">@ViewBag.Incorrecto0</p>
+@{
+    if(ViewBag.estado0 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado0</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado0</p>
+    } 
+}
 <img src="/img/rio.jpg">
 <p></p>
 <form method="post" action='@Url.Action("hab3","Home")'>
@@ -28,8 +38,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto1</p>
-<p class="incorrecto">@ViewBag.Incorrecto1</p>
+@{
+    if(ViewBag.estado1 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado1</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado1</p>
+    } 
+}
 <img src="/img/denver.jpg">
 <p></p>
 <form method="post" action='@Url.Action("hab3","Home")'>
@@ -43,8 +60,15 @@
         </div>
     </div>
 </form>
-<p class="correcto">@ViewBag.Correcto2</p>
-<p class="incorrecto">@ViewBag.Incorrecto2</p>
+@{
+    if(ViewBag.estado2 == "¡CORRECTO!")
+    {
+        <p class="correcto">@ViewBag.Estado2</p>
+    }
+    else {
+        <p class="incorrecto">@ViewBag.Estado2</p>
+    } 
+}
 <p></p>
 <p>CLAVE:</p>
 <form method="post" action='@Url.Action("Habitacion","Home")'>

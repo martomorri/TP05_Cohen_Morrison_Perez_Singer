@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj": {}
+    "C:\\Users\\marto\\Documents\\ORT\\4IB\\Programacion 4IB\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj": {
+    "C:\\Users\\marto\\Documents\\ORT\\4IB\\Programacion 4IB\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj",
+        "projectUniqueName": "C:\\Users\\marto\\Documents\\ORT\\4IB\\Programacion 4IB\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj",
         "projectName": "TP5",
-        "projectPath": "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj",
-        "packagesPath": "C:\\Users\\46873102\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46873102\\Desktop\\TP05_Cohen_Morrison_Perez_Singer\\obj\\",
+        "projectPath": "C:\\Users\\marto\\Documents\\ORT\\4IB\\Programacion 4IB\\TP05_Cohen_Morrison_Perez_Singer\\TP5.csproj",
+        "packagesPath": "C:\\Users\\marto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marto\\Documents\\ORT\\4IB\\Programacion 4IB\\TP05_Cohen_Morrison_Perez_Singer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\46873102\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\marto\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
